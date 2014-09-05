@@ -4,3 +4,14 @@ respawnDelay = 2;
 respawnOnStart = 1;
 disabledAI = 1;
 enableDebugConsole = 1;
+author = "Sgt. Marbles";
+OnLoadName = "Conquest";
+OnLoadMission = "Capture the flags and control the majority of the battlefield.";
+scriptedPlayer = 1;
+
+class Header
+{
+	gameType = SC;
+	minPlayers = 1;
+	maxPlayers = 64;
+}
