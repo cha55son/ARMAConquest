@@ -71,7 +71,7 @@ class Mission
 	};
 	class Groups
 	{
-		items=64;
+		items=65;
 		class Item0
 		{
 			side="LOGIC";
@@ -3243,6 +3243,91 @@ class Mission
 				};
 			};
 		};
+		class Item64
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=8;
+				class Item0
+				{
+					position[]={10069.588,16.017128,12797.874};
+					azimut=110.09174;
+					id=65;
+					side="EAST";
+					vehicle="O_soldier_SL_F";
+					leader=1;
+					rank="SERGEANT";
+					skill=0.5;
+				};
+				class Item1
+				{
+					position[]={10063.172,16.001459,12794.896};
+					azimut=110.09174;
+					id=66;
+					side="EAST";
+					vehicle="O_soldier_TL_F";
+					rank="SERGEANT";
+					skill=0.5;
+				};
+				class Item2
+				{
+					position[]={10066.61,15.54408,12804.281};
+					azimut=110.09174;
+					id=67;
+					side="EAST";
+					vehicle="O_soldier_AR_F";
+					rank="CORPORAL";
+					skill=0.44999999;
+				};
+				class Item3
+				{
+					position[]={10056.757,16.274176,12791.917};
+					azimut=110.09174;
+					id=68;
+					side="EAST";
+					vehicle="O_soldier_AR_F";
+					skill=0.40000001;
+				};
+				class Item4
+				{
+					position[]={10063.629,15.212052,12810.699};
+					azimut=110.09174;
+					id=69;
+					side="EAST";
+					vehicle="O_soldier_AAR_F";
+					skill=0.40000001;
+				};
+				class Item5
+				{
+					position[]={10050.345,16.324802,12788.937};
+					azimut=110.09174;
+					id=70;
+					side="EAST";
+					vehicle="O_soldier_LAT_F";
+					rank="CORPORAL";
+					skill=0.44999999;
+				};
+				class Item6
+				{
+					position[]={10060.651,15.768218,12817.113};
+					azimut=110.09174;
+					id=71;
+					side="EAST";
+					vehicle="O_medic_F";
+					skill=0.40000001;
+				};
+				class Item7
+				{
+					position[]={10043.933,15.566367,12785.958};
+					azimut=110.09174;
+					id=72;
+					side="EAST";
+					vehicle="O_soldier_F";
+					skill=0.40000001;
+				};
+			};
+		};
 	};
 	class Vehicles
 	{
@@ -3251,7 +3336,7 @@ class Mission
 		{
 			position[]={11706.151,13.069454,13721.86};
 			special="NONE";
-			id=65;
+			id=73;
 			side="EMPTY";
 			vehicle="Flag_White_F";
 			skill=0.60000002;
@@ -3263,7 +3348,7 @@ class Mission
 		{
 			position[]={11382.342,20.690685,14184.947};
 			special="NONE";
-			id=66;
+			id=74;
 			side="EMPTY";
 			vehicle="Flag_White_F";
 			skill=0.60000002;
@@ -3275,7 +3360,7 @@ class Mission
 		{
 			position[]={11148.759,44.198811,14596.789};
 			special="NONE";
-			id=67;
+			id=75;
 			side="EMPTY";
 			vehicle="Flag_White_F";
 			skill=0.60000002;
@@ -3287,7 +3372,7 @@ class Mission
 		{
 			position[]={11012.93,26.461128,13443.521};
 			special="NONE";
-			id=68;
+			id=76;
 			side="EMPTY";
 			vehicle="Flag_White_F";
 			skill=0.60000002;
@@ -3300,7 +3385,7 @@ class Mission
 			position[]={10129.545,16.652435,12738.092};
 			azimut=61.252399;
 			special="NONE";
-			id=69;
+			id=77;
 			side="EMPTY";
 			vehicle="B_Heli_Light_01_F";
 			skill=0.60000002;
@@ -3311,7 +3396,7 @@ class Mission
 		{
 			position[]={11042.172,25.830486,13445.952};
 			azimut=-42.5056;
-			id=70;
+			id=78;
 			side="EMPTY";
 			vehicle="C_SUV_01_F";
 			skill=0.60000002;
@@ -3323,7 +3408,7 @@ class Mission
 			position[]={10120.596,16.641466,12749.139};
 			azimut=71.696701;
 			special="NONE";
-			id=71;
+			id=79;
 			side="EMPTY";
 			vehicle="I_Heli_Transport_02_F";
 			skill=0.60000002;
@@ -3335,7 +3420,7 @@ class Mission
 			position[]={10140.709,16.553087,12775.814};
 			azimut=-105.722;
 			special="NONE";
-			id=72;
+			id=80;
 			side="EMPTY";
 			vehicle="B_MRAP_01_gmg_F";
 			skill=0.60000002;
@@ -3347,7 +3432,7 @@ class Mission
 			position[]={10138.317,16.814272,12785.688};
 			azimut=-105.722;
 			special="NONE";
-			id=73;
+			id=81;
 			side="EMPTY";
 			vehicle="O_MRAP_02_gmg_F";
 			skill=0.60000002;
@@ -3359,7 +3444,7 @@ class Mission
 			position[]={10988.765,26.839241,13427.294};
 			azimut=115.483;
 			special="NONE";
-			id=74;
+			id=82;
 			side="EMPTY";
 			vehicle="B_G_Offroad_01_armed_F";
 			skill=0.60000002;
@@ -3370,7 +3455,7 @@ class Mission
 		{
 			position[]={11762.766,13.161477,13706.154};
 			azimut=-142.177;
-			id=75;
+			id=83;
 			side="EMPTY";
 			vehicle="I_MRAP_03_hmg_F";
 			skill=0.60000002;
@@ -3381,7 +3466,7 @@ class Mission
 		{
 			position[]={11673.763,13.354707,13696.971};
 			azimut=-50.829601;
-			id=76;
+			id=84;
 			side="EMPTY";
 			vehicle="O_Truck_03_transport_F";
 			skill=0.60000002;
@@ -3392,7 +3477,7 @@ class Mission
 		{
 			position[]={11362.472,19.609818,14116.394};
 			azimut=-50.1478;
-			id=77;
+			id=85;
 			side="EMPTY";
 			vehicle="B_Heli_Transport_01_F";
 			skill=0.60000002;
@@ -3403,7 +3488,7 @@ class Mission
 		{
 			position[]={11358.987,21.224209,14247.138};
 			azimut=-146.972;
-			id=78;
+			id=86;
 			side="EMPTY";
 			vehicle="O_MRAP_02_F";
 			skill=0.60000002;
@@ -3415,7 +3500,7 @@ class Mission
 			position[]={11177.523,43.427944,14624.372};
 			azimut=112.79414;
 			special="NONE";
-			id=79;
+			id=87;
 			side="EMPTY";
 			vehicle="B_G_Offroad_01_armed_F";
 			skill=0.60000002;
@@ -3426,7 +3511,7 @@ class Mission
 		{
 			position[]={11108.588,41.869778,14562.812};
 			azimut=-89.191872;
-			id=80;
+			id=88;
 			side="EMPTY";
 			vehicle="C_SUV_01_F";
 			skill=0.60000002;
@@ -3438,7 +3523,7 @@ class Mission
 			position[]={11049.242,56.69553,15620.794};
 			azimut=28.565653;
 			special="NONE";
-			id=81;
+			id=89;
 			side="EMPTY";
 			vehicle="B_Heli_Light_01_F";
 			skill=0.60000002;
@@ -3450,7 +3535,7 @@ class Mission
 			position[]={11035.741,57.103981,15625.257};
 			azimut=39.00996;
 			special="NONE";
-			id=82;
+			id=90;
 			side="EMPTY";
 			vehicle="I_Heli_Transport_02_F";
 			skill=0.60000002;
@@ -3462,7 +3547,7 @@ class Mission
 			position[]={11038.265,58.330296,15658.571};
 			azimut=-138.40829;
 			special="NONE";
-			id=83;
+			id=91;
 			side="EMPTY";
 			vehicle="B_MRAP_01_F";
 			skill=0.60000002;
@@ -3474,7 +3559,7 @@ class Mission
 			position[]={11030.916,59.117664,15665.588};
 			azimut=-138.40875;
 			special="NONE";
-			id=84;
+			id=92;
 			side="EMPTY";
 			vehicle="O_MRAP_02_gmg_F";
 			skill=0.60000002;

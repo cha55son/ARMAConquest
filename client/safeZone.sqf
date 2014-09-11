@@ -9,3 +9,12 @@ _veh addEventHandler ["HandleDamage", {
 		0
 	};
 }];
+// Ensure only infantry are able to fire within the base.
+if ((_veh isKindOf "LandVehicle") || (_veh isKindOf "Air")) then {
+	_veh addEventHandler ["Fired", {
+		if ({(_this select 0) distance getMarkerPos (_x select 0) < _x select 1} count SAFETY_ZONES > 0) then {
+			deleteVehicle (_this select 6);
+			titleText ["Vehicles are not allowed to fire within the base!", "PLAIN", 3];
+		};
+	}];
+}

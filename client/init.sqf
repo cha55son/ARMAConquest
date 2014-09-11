@@ -7,7 +7,7 @@ player addEventHandler ["respawn", {
 
 // Run the safezone script for each new player.
 player execVM "client\safeZone.sqf";
-// and the vehicles currently on the map.
+// and the vehicles currently on that player's map.
 {
 	_x execVM "client\safeZone.sqf";
 } foreach vehicles;
