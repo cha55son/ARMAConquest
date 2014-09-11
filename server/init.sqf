@@ -9,9 +9,9 @@ sectors = [];
 [] spawn {
 	private "_counter";
 	_counter = 0;
-	while {true} do {
-		sleep 1;
+	// while {true} do {
+		// sleep 1;
 		// hint format ["counter at: %1", _counter];
-		_counter = _counter + 1;
-	}
+		// _counter = _counter + 1;
+	// }
 }
