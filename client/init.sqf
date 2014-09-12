@@ -7,9 +7,11 @@ player addEventHandler ["respawn", {
 
 // Run the safezone script for each new player.
 player execVM "client\safeZone.sqf";
+
 // and the vehicles currently on that player's map.
 {
 	_x execVM "client\safeZone.sqf";
+	_x execVM "client\eject.sqf";
 } foreach vehicles;
 // Run the safezone script for any newly created/re-spawned vehicles
 [missionnamespace, "respawn", {
@@ -17,4 +19,5 @@ player execVM "client\safeZone.sqf";
 	// Fall out if the object is not a land or air vehicle
 	if (!(_aVeh isKindOf "LandVehicle") && !(_aVeh isKindOf "Air")) exitWith { };
 	_aVeh execVM "client\safeZone.sqf";
+	_aVeh execVM "client\eject.sqf";
 }] spawn BIS_fnc_addScriptedEventHandler;
