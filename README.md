@@ -13,4 +13,4 @@ Multiplayer conquest mission for ARMA3.
 
     C:\Users\<user>\Documents\Arma 3 - Other Profiles\<arma username>\mpmissions\ARMAConquest.Altis
 
-* Start ARMA3 and click `play > multiplayer > new > next > Altis > ARMAConquest.Altis > edit`.
+* Start ARMA3 and click `play > multiplayer > new > ok > Altis > ARMAConquest.Altis > edit`.
