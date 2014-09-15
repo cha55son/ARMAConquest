@@ -5,7 +5,6 @@ CQ_safeZones = [["baseBLUFOR", 50], ["baseOPFOR", 50]];
 CQ_isWithinZone = {
 	private ["_unit"];
 	_unit = _this select 0;
-	hint format ["testing: %1", _unit];
 	{
 		_unit distance getMarkerPos (_x select 0) < (_x select 1)
 	} count CQ_safeZones > 0
@@ -33,4 +32,14 @@ if (_unit == player) then {
 		};
 	}];
 	// Remove any dead player's bodies within the safe zone.
+	player addEventHandler ["Killed", { 
+		private ["_unit"];
+		_unit = _this select 0;
+		if (_this call CQ_isWithinZone) then {
+			removeAllWeapons _unit;
+			hideBody _unit;
+			deleteVehicle _unit; 
+		};
+	}];
+	
 };

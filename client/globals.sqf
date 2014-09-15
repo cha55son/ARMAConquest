@@ -1,7 +1,6 @@
-CQ_applyEject          = compileFinal preprocessFile "client\misc\eject.sqf";
-CQ_applySafeZoneRules  = compileFinal preprocessFile "client\misc\safeZone.sqf";
-CQ_applyAssaultLoadout = compileFinal preprocessFile "client\loadouts\assault.sqf";
-CQ_applyEngiLoadout    = compileFinal preprocessFile "client\loadouts\engineer.sqf";
+CQ_applyEject         = compileFinal preprocessFile "client\misc\eject.sqf";
+CQ_applySafeZoneRules = compileFinal preprocessFile "client\misc\safeZone.sqf";
+CQ_applyClassLoadout  = compileFinal preprocessFile "client\misc\classLoadout.sqf";
 /*
 	Usage: [_unit, _loadoutName] call CQ_applyLoadoutToAI;
 */
@@ -27,9 +26,8 @@ CQ_applyLoadout = {
 	private ["_unit", "_loadoutName"];
 	_unit = _this select 0;
 	_loadoutName = _this select 1;
-	switch (_loadoutName) do {
-		case "Engineer": { _unit call CQ_applyEngiLoadout; };
-		default { _unit call CQ_applyAssaultLoadout; };
-	};
+	[_unit, _loadoutName] call CQ_applyClassLoadout;
 	_unit setVariable ["CQ_classType", _loadoutName];
 };
+
+
