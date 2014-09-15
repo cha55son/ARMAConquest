@@ -1,14 +1,6 @@
 private ["_unit"];
 
 _unit = _this;
-CQ_safeZones = [["baseBLUFOR", 50], ["baseOPFOR", 50]];
-CQ_isWithinZone = {
-	private ["_unit"];
-	_unit = _this select 0;
-	{
-		_unit distance getMarkerPos (_x select 0) < (_x select 1)
-	} count CQ_safeZones > 0
-};
 
 // Don't allow units to take damage within the base.
 _unit addEventHandler ["HandleDamage", {
@@ -23,15 +15,16 @@ if ((_unit isKindOf "LandVehicle") || (_unit isKindOf "Air")) then {
 		};
 	}];
 };
+// Only apply the code below to the player's body.
 if (_unit == player) then {
-	// Disable inventory access within the safe zone
+	// Disable inventory access within the safe zone.
 	player addEventHandler ["InventoryOpened", {
 		if (_this call CQ_isWithinZone) then {
 			titleText ["Inventory access not allowed in base!", "PLAIN"];
 			true
 		};
 	}];
-	// Remove any dead player's bodies within the safe zone.
+	// Remove the player's body if it is in a safe zone.
 	player addEventHandler ["Killed", { 
 		private ["_unit"];
 		_unit = _this select 0;

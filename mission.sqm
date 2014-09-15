@@ -843,7 +843,7 @@ class Mission
 						};
 						class Item5
 						{
-							value="0";
+							value="1";
 							parentCls="ModuleRespawnVehicle_F";
 							typeName="PositionType";
 						};
@@ -1099,7 +1099,7 @@ class Mission
 						};
 						class Item5
 						{
-							value="0";
+							value="1";
 							parentCls="ModuleRespawnVehicle_F";
 							typeName="PositionType";
 						};
@@ -1178,7 +1178,7 @@ class Mission
 						};
 						class Item5
 						{
-							value="0";
+							value="1";
 							parentCls="ModuleRespawnVehicle_F";
 							typeName="PositionType";
 						};
@@ -1257,7 +1257,7 @@ class Mission
 						};
 						class Item5
 						{
-							value="0";
+							value="1";
 							parentCls="ModuleRespawnVehicle_F";
 							typeName="PositionType";
 						};
@@ -2108,7 +2108,7 @@ class Mission
 				class Item0
 				{
 					position[]={11171.486,44.045101,14626.544};
-					azimut=68.681343;
+					azimut=68.681297;
 					class args
 					{
 						items=9;
@@ -2224,7 +2224,7 @@ class Mission
 				class Item0
 				{
 					position[]={11113.185,41.747444,14562.835};
-					azimut=-133.30426;
+					azimut=-133.304;
 					class args
 					{
 						items=9;
@@ -2303,7 +2303,7 @@ class Mission
 				class Item0
 				{
 					position[]={11264.22,52.829548,15468.209};
-					azimut=234.59125;
+					azimut=234.591;
 					class args
 					{
 						items=9;
@@ -2339,7 +2339,7 @@ class Mission
 						};
 						class Item5
 						{
-							value="0";
+							value="1";
 							parentCls="ModuleRespawnVehicle_F";
 							typeName="PositionType";
 						};
@@ -2382,7 +2382,7 @@ class Mission
 				class Item0
 				{
 					position[]={11280.15,52.817089,15458.472};
-					azimut=245.03554;
+					azimut=245.036;
 					class args
 					{
 						items=9;
@@ -2418,7 +2418,7 @@ class Mission
 						};
 						class Item5
 						{
-							value="0";
+							value="1";
 							parentCls="ModuleRespawnVehicle_F";
 							typeName="PositionType";
 						};
@@ -2461,7 +2461,7 @@ class Mission
 				class Item0
 				{
 					position[]={11263.749,50.299286,15412.852};
-					azimut=67.617226;
+					azimut=67.617203;
 					class args
 					{
 						items=9;
@@ -2497,7 +2497,7 @@ class Mission
 						};
 						class Item5
 						{
-							value="0";
+							value="1";
 							parentCls="ModuleRespawnVehicle_F";
 							typeName="PositionType";
 						};
@@ -2540,7 +2540,7 @@ class Mission
 				class Item0
 				{
 					position[]={11270.765,50.104671,15405.501};
-					azimut=67.617386;
+					azimut=67.617401;
 					class args
 					{
 						items=9;
@@ -2576,7 +2576,7 @@ class Mission
 						};
 						class Item5
 						{
-							value="0";
+							value="1";
 							parentCls="ModuleRespawnVehicle_F";
 							typeName="PositionType";
 						};
@@ -3107,7 +3107,7 @@ class Mission
 				class Item0
 				{
 					position[]={11457.324,20.40494,14195.36};
-					azimut=-152.16068;
+					azimut=-152.161;
 					class args
 					{
 						items=9;
