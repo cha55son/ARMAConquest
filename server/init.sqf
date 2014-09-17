@@ -1,17 +1,17 @@
-// Index 0: BLUFOR tickets.
-// Index 1: OPFOR tickets.
-tickets = [0, 0];
-ticketLimit = 10;
-sectors = [];
-// [west, "Alpha"] call BIS_fnc_addRespawnPosition;
-// [west, [11128.2, 14556.9, 0]] call BIS_fnc_addRespawnPosition;
-// Increment tickets based on dominance
-[] spawn {
-	private "_counter";
-	_counter = 0;
-	// while {true} do {
-		// sleep 1;
-		// hint format ["counter at: %1", _counter];
-		// _counter = _counter + 1;
-	// }
-}
+
+if (true) exitWith { };
+
+
+[unitLoadoutAssaultBLUFOR, "Assault" ] call CQ_applyLoadoutToAI;
+[unitLoadoutEngiBLUFOR,    "Engineer"] call CQ_applyLoadoutToAI;
+[unitLoadoutReconBLUFOR,   "Recon"   ] call CQ_applyLoadoutToAI;
+[unitLoadoutATBLUFOR,      "AT"      ] call CQ_applyLoadoutToAI;
+[unitLoadoutAABLUFOR,      "AA"      ] call CQ_applyLoadoutToAI;
+[unitLoadoutMedicBLUFOR,   "Medic"   ] call CQ_applyLoadoutToAI;
+
+[unitLoadoutAssaultOPFOR, "Assault" ] call CQ_applyLoadoutToAI;
+[unitLoadoutEngiOPFOR,    "Engineer"] call CQ_applyLoadoutToAI;
+[unitLoadoutReconOPFOR,   "Recon"   ] call CQ_applyLoadoutToAI;
+[unitLoadoutATOPFOR,      "AT"      ] call CQ_applyLoadoutToAI;
+[unitLoadoutAAOPFOR,      "AA"      ] call CQ_applyLoadoutToAI;
+[unitLoadoutMedicOPFOR,   "Medic"   ] call CQ_applyLoadoutToAI;
